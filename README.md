@@ -1,1 +1,1 @@
-https://github.com/whiteeze/posmotri-v-okno-fd-main
+https://github.com/whiteeze/posmotri-v-okno-fd
