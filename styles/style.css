@@ -114,7 +114,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-	outline: 1px solid #ccc;
+	outline: 1px solid #fff;
 	outline-offset: 2px;
 }
 
@@ -129,7 +129,7 @@ ol {
 	border-right: none;
 	border-bottom: 1px solid white;
 	border-left: none;
-	color: #ccc;
+	color: #fff;
 	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -144,8 +144,8 @@ ol {
 }
 
 .search-form__textfield:active {
-	border-right: 1px solid #ccc;
-	border-left: 1px solid #ccc;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
 }
 
 .search-form__textfield:focus {
@@ -183,23 +183,23 @@ ol {
 	display: block;
 	height: 15px;
 	width: 15px;
-	background-color: white;
+	background-color: #fff;
 }
 
 .button {
-	border: 1px solid white;
-	font-family: 'Fira Sans Condensed', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 21.5px;
-	background-color: transparent;
-	cursor: pointer;
-	color: inherit;
-	padding: 6px 73.5px;
+  border: 1px solid white;
+  color: inherit;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 6px 73.5px;
 }
 
 .button:active {
-	background-color: #ccc;
+	background-color: #fff;
 }
 
 .button:hover {
@@ -221,9 +221,8 @@ ol {
 }
 
 .more-button {
-	width: 100%;
-	height: inherit;
-  background-color: transparent;
+	inline-size: 100%;
+	min-block-size: 34px;
 }
 
 .content__details {
@@ -244,19 +243,14 @@ ol {
 }
 
 .content__accent {
-	font-weight: 700;
-	font-size: 75px;
-	line-height: 70.5px;
-	opacity: 0.3;
+	color: rgba(84, 80, 80, 1);
 	text-transform: uppercase;
 }
 
 .content__list {
 	position: relative;
-	height: 298px;
-	width: 399px;
+	block-size: 298px;
 	overflow: auto;
-	overflow-x: hidden;
 }
 
 .content__list-item:not(:last-child) {
@@ -271,11 +265,11 @@ ol {
 }
 
 .content__card-link:active {
-	background-color: #ccc;
+	background-color:rgba(84, 80, 80, 1);
 }
 
 .content__card-link_current {
-	background-color: #ccc;
+	background-color:rgba(84, 80, 80, 1);
 }
 
 .content__card-link:hover {
@@ -295,7 +289,6 @@ ol {
 	display: flex;
 	flex-direction: row;
 	width: 394px;
-	height: 107px;
 }
 
 .content__video-card-description-container {
@@ -320,6 +313,11 @@ ol {
 }
 
 .content__video-card-description {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+	overflow: hidden;
 	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -330,6 +328,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-	width: 100%;
-	height: 100%;
+	width: 194px;
+	height: 103px;
+	object-fit: cover;
+	object-position: center;
 }
